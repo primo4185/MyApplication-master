@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/autoScrollViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/re_cat1"
+                    android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.65"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/cat1"
+                            android:src="@drawable/cat1"
+                            android:tint="@color/white"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="적 캐릭터"
+                            android:textSize="14dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat1"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/re_cat2"
+                    android:layout_width="match_parent"
+                    android:background="@color/yellow"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/cat2"
+                            android:src="@drawable/cat2"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="3dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="캐릭터"
+
+                            android:textSize="14dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat2"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/re_cat3"
+                    android:layout_width="match_parent"
+                    android:background="@color/lime"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/cat3"
+                            android:src="@drawable/cat5"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="4dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가마토토 탐험대"
+
+                            android:textSize="14dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat3"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/re_cat4"
+                    android:layout_width="match_parent"
+                    android:background="@color/green"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.65"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:tint="@color/white"
+                            android:id="@+id/cat4"
+                            android:src="@drawable/cat6"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="메인 스테이지"
+
+                            android:textSize="14dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat4"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/re_cat5"
+                    android:layout_width="match_parent"
+                    android:background="@color/blue"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.65"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/cat5"
+                            android:tint="@color/white"
+                            android:src="@drawable/cat3"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="레전드 스테이지"
+
+                            android:textSize="14dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat5"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/re_cat6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/blue_dark"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/cat6"
+                            android:src="@drawable/cat7"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="스페셜 스테이지"
+                            android:textSize="14dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat6"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/re_cat7"
+                    android:layout_width="match_parent"
+                    android:background="@color/violet"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:tint="@color/white"
+                            android:id="@+id/cat7"
+                            android:src="@drawable/cat4"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="냥코 대전쟁 POP"
+                            android:textSize="14dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat7"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/re_cat8"
+                    android:layout_width="match_parent"
+                    android:background="@color/violet_dark"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.65"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/cat8"
+                            android:src="@drawable/cat10"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="냥콤보/(구)"
+                            android:textSize="14dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat8"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/re_cat9"
+                    android:layout_width="match_parent"
+                    android:background="@color/yellow_dark"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.65"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/cat9"
+                            android:src="@drawable/cat9"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="오토토 개발대"
+                            android:textSize="14dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat9"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/re_cat10"
+                    android:layout_width="match_parent"
+                    android:background="@color/darkblue_dark"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:tint="@color/white"
+                            android:id="@+id/cat10"
+                            android:src="@drawable/cat8"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="동영상 공략법"
+
+                            android:textSize="14dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/cat10"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
